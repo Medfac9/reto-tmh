@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Proyecto de Tareas y Perfil de Usuario con Next.js
 
-## Getting Started
+Este proyecto es una aplicación de ejemplo que incluye funcionalidades de una lista de tareas, una página de perfil de usuario, y una página de productos con filtros, implementadas con **Next.js** y **TypeScript**.
 
-First, run the development server:
+## Requisitos Previos
+
+Para ejecutar este proyecto, asegúrate de tener instalados los siguientes programas:
+
+- **Node.js** (versión 16 o superior)
+- **npm** o **yarn** (dependiendo de tu gestor de paquetes preferido)
+
+## Instalación
+
+1. **Clona el repositorio**:
+
+   Si aún no has clonado el repositorio, puedes hacerlo utilizando Git:
+
+   ```bash
+   git clone https://github.com/tu_usuario/tu_repositorio.git
+   cd tu_repositorio
+
+2. **Instala las dependencias**:
+
+   Utiliza npm o yarn para instalar las dependencias del proyecto:
+
+   ```bash
+   npm install
+   ```
+
+## Ejecución
+Para ejecutar la aplicación en modo de desarrollo, utiliza el siguiente comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Esto iniciará un servidor de desarrollo y podrás acceder a la aplicación en `http://localhost:3000`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Estructura del Proyecto
+ToDo List -> `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Perfil de Usuario -> `http://localhost:3000/profile`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Página de Productos -> `http://localhost:3000/products`
 
-## Learn More
+## Tests
+Para ejecutar los tests, utiliza el siguiente comando:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run test
+```
+Esto ejecutará los tests definidos en el proyecto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para ejecutar un test determinado, puedes usar el siguiente comando:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run test src/tests/NombreDelTest.test.ts
+```
